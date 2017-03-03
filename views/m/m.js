@@ -18,7 +18,7 @@ export default new Router({
   },
   routes: [
     {
-      path: '/home',
+      path: '/',
       component: function (resolve) {
         require(['./themes/home/home'], resolve)
       }
