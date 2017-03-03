@@ -6,7 +6,9 @@ window.Vue = Vue;
 
 Vue.use(Router);
 
-export default new Router({
+console.log('哈哈')
+
+const rt = new Router({
   mode: 'history',
   routes: [
     {
@@ -17,6 +19,6 @@ export default new Router({
     }
   ]
 });
+console.log(rt)
 
-console.log('哈哈')
 new Vue(App).$mount('#app');
