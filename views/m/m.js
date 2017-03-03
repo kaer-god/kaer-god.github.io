@@ -25,4 +25,6 @@ export default new Router({
     }
   ]
 });
+
+console.log('哈哈')
 new Vue(App).$mount('#app');
