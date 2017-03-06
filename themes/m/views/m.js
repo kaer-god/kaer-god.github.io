@@ -14,7 +14,7 @@ const rt = new Router({
     {
       path: '/',
       component: function (resolve) {
-        require(['./themes/home/home'], resolve)
+        require(['./home/home'], resolve)
       }
     }
   ]
