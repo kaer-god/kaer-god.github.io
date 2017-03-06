@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <div>哈哈哈</div>
     <router-view class="view"></router-view>
   </div>
 </template>
@@ -37,7 +36,21 @@
 </style>
 
 <script>
-//  import router from './_router';
-  module.exports = {
-  }
+  //  import router from './_router';
+  import Vue from 'vue';
+  import Router from 'vue-router';
+  Vue.use(Router);
+  const rt = new Router({
+    mode: 'history',
+    routes: [
+      {
+        path: '/',
+        component: function (resolve) {
+          require(['./home/home'], resolve)
+        }
+      }
+    ]
+  });
+  console.log(rt)
+  module.exports = {}
 </script>
