@@ -1,0 +1,2 @@
+webpackJsonp([2,0],{0:function(e,t,u){u(115),e.exports=u(114)},114:function(e,t,u){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}var o=u(300),r=n(o),a=u(299),d=n(a),f=new d.default({mode:"history",routes:[{}]});window.Vue=r.default,new r.default({router:f}).$mount("#app")}});
+//# sourceMappingURL=app.f0c0283139e987d01ce0.js.map
