@@ -36,14 +36,8 @@
 </style>
 
 <script>
-  //  import router from './_router';
-  import Vue from 'vue';
-  import Router from 'vue-router';
-  Vue.use(Router);
-  const rt = new Router({
-    mode: 'history',
-    routes: [{}]
-  });
-  console.log(rt)
-  module.exports = {}
+  import router from './_router';
+  module.exports = {
+    router
+  }
 </script>

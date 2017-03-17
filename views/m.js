@@ -1,13 +1,6 @@
 import Vue from 'vue';
-// import App from './m.vue';
-import Router from 'vue-router';
-
-const router = new Router({
-  mode: 'history',
-  routes: [{}]
-});
+import App from './m.vue';
 
 window.Vue = Vue;
 
-new Vue({router}).$mount('#app')
-// new Vue(App).$mount('#app');
+new Vue(App).$mount('#app');
