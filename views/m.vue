@@ -42,14 +42,7 @@
   Vue.use(Router);
   const rt = new Router({
     mode: 'history',
-    routes: [
-      {
-        path: '/',
-        component: function (resolve) {
-          require(['./home/home'], resolve)
-        }
-      }
-    ]
+    routes: [{}]
   });
   console.log(rt)
   module.exports = {}
