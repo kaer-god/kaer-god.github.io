@@ -6,12 +6,13 @@ Vue.use(Router);
 export default new Router({
   mode: 'history',
   base: '/',
-  scrollBehavior: (to, from, savedPosition) => {
-    if (savedPosition) {
-      return savedPosition
-    } else {
-      return { x: 0, y: 0 }
+  routes: [
+    {
+      path: '/home',
+      name: 'home',
+      component: function (resolve) {
+        require(['../home/home.vue'], resolve)
+      }
     }
-  },
-  routes: []
+  ]
 });

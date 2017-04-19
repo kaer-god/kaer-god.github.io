@@ -21,7 +21,7 @@ var common_proxy2 = {
 module.exports = {
   build : {
     env                      : require('./prod.env'),
-    index                    : path.resolve(__dirname, '../dist/index.html'),
+    index                    : path.resolve(__dirname, '../index.html'),
     assetsRoot               : path.resolve(__dirname, '../dist'),
     assetsSubDirectory       : 'static',
     assetsPublicPath         : '/dist/',
