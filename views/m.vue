@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h2>dasdasd</h2>
+    <a href="../pages/test.html">dasdasd</a>
     <router-view class="view"></router-view>
   </div>
 </template>
