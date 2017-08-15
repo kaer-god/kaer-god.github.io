@@ -1,0 +1,76 @@
+{
+  "_from": "purecss@^0.6.0",
+  "_id": "purecss@0.6.2",
+  "_inBundle": false,
+  "_integrity": "sha1-8IJ9In6QlUPFE4821WyMYT9Ha4w=",
+  "_location": "/purecss",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "purecss@^0.6.0",
+    "name": "purecss",
+    "escapedName": "purecss",
+    "rawSpec": "^0.6.0",
+    "saveSpec": null,
+    "fetchSpec": "^0.6.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/purecss/download/purecss-0.6.2.tgz",
+  "_shasum": "f0827d227e909543c5138f36d56c8c613f476b8c",
+  "_spec": "purecss@^0.6.0",
+  "_where": "/private/var/www/kaer-god.github.io",
+  "authors": [
+    "ericf <edf@ericf.me>",
+    "tilomitra <tilomitra@gmail.com>",
+    "msweeney <matt.sweeney@yahoo.com>",
+    "jamesalley <manalagi001@yahoo.com>"
+  ],
+  "browser": "build/pure-min.css",
+  "bugs": {
+    "url": "https://github.com/yahoo/pure/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Pure is a ridiculously tiny CSS library you can use to start any web project.",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "bower": "^1.3.7",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compress": "^1.3.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-css-selectors": "^1.1.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-pure-grids": "^1.0.0",
+    "grunt-stripmq": "0.0.6",
+    "tap": "^8.0.1"
+  },
+  "homepage": "http://purecss.io",
+  "keywords": [
+    "pure",
+    "css",
+    "purecss",
+    "yahoo"
+  ],
+  "license": "BSD",
+  "main": "index.js",
+  "name": "purecss",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yahoo/pure.git"
+  },
+  "scripts": {
+    "prepublish": "grunt release",
+    "pretest": "grunt build",
+    "test": "grunt test && tap test/*.js"
+  },
+  "version": "0.6.2"
+}
