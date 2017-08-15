@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <a href="../pages/test.html">dasdasd</a>
-    <router-view class="view"></router-view>
+    <a href="../pages/test.html">测试一哈</a>
+    <!--<router-view class="view"></router-view>-->
+    <home-page></home-page>
   </div>
 </template>
 
@@ -39,6 +40,9 @@
 <script>
   import router from './_router';
   module.exports = {
-    router
+    router,
+    components: {
+      'home-page': require('./home/home.vue')
+    }
   }
 </script>
