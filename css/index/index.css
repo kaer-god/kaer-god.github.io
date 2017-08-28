@@ -1,5 +1,18 @@
 @import "./../style.css";
 
 @media screen and (min-width: 768px) {
+<<<<<<< HEAD
 
+=======
+    .cool-picture {
+        display: block;
+        position: absolute;
+        top:50px;
+        right:100px;
+        width:200px;
+        border-radius: 50%;
+        transform: rotate(45deg);
+        transform-origin: 0 50%;
+    }
+>>>>>>> 6380bbb7781f40cdb2d6f477f990bbf2f3fd8a90
 }
