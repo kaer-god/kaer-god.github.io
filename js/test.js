@@ -7,7 +7,7 @@ let start = 0;
 let scroll = 0;
 let pre_scroll = 0;// 上次滚动距离
 let timeStamp = 0; //时间戳
-let  a = 0.008;
+let  a = 0.007;
 
 let last_points = [{},{},{}]; // 记录最后2个点
 
@@ -25,6 +25,8 @@ inner_dom.addEventListener("touchstart", function (e) {
 }, false);
 
 inner_dom.addEventListener("touchmove", function (e) {
+    console.log('time', e.timeStamp);
+
     if(interval_index) {
         clearInterval(interval_index);
         scroll = pre_scroll;
@@ -64,7 +66,6 @@ function fun_speed (){
     a = speed_last > 0 ? a : -a;
 
     let time = speed_last/a; //速度衰减时间
-    console.log('time-11',time)
 
     // 设置定时器 10ms
     interval_index = setInterval(function () {
@@ -73,7 +74,6 @@ function fun_speed (){
             time = time - 30;
             speed_last  = speed_last - 30 * a;
             inner_dom.scrollTop = inner_dom.scrollTop + scroll;
-            console.log('time', scroll);
 
         }else {
             clearInterval(interval_index);
