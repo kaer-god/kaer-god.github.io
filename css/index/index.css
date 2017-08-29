@@ -50,11 +50,11 @@
     }
 /*关闭态*/
     .home-header.close{
-        width:80px;
+        width:100px;
 
     }
     .home-header.close .self-name{
-        width:80px;
+        width:100px;
 
     }
     .home-header.close .other-modules{
