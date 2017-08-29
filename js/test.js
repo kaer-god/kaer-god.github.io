@@ -7,7 +7,7 @@ let start = 0;
 let scroll = 0;
 let pre_scroll = 0;// 上次滚动距离
 let timeStamp = 0; //时间戳
-let  a = 0.05;
+let  a = 0.008;
 
 let last_points = [{},{},{}]; // 记录最后2个点
 
@@ -64,19 +64,21 @@ function fun_speed (){
     a = speed_last > 0 ? a : -a;
 
     let time = speed_last/a; //速度衰减时间
+    console.log('time-11',time)
 
     // 设置定时器 10ms
     interval_index = setInterval(function () {
-        console.log('time', time);
         if(time > 0){
-            scroll = speed_last * 10 - (10 * a) * 5;
-            time = time - 10;
-            speed_last  = speed_last - 10 * a;
+            scroll = speed_last * 30 - (30 * a) *15;
+            time = time - 30;
+            speed_last  = speed_last - 30 * a;
             inner_dom.scrollTop = inner_dom.scrollTop + scroll;
+            console.log('time', scroll);
+
         }else {
             clearInterval(interval_index);
         }
-    },40)
+    },30)
 }
 // function move (vm,dom,word_distance,reduced_distance) {
 //         //startY 滑动起点Y坐标
