@@ -1,18 +1,66 @@
 @import "./../style.css";
 
 @media screen and (min-width: 768px) {
-<<<<<<< HEAD
-
-=======
-    .cool-picture {
-        display: block;
-        position: absolute;
-        top:50px;
-        right:100px;
-        width:200px;
-        border-radius: 50%;
-        transform: rotate(45deg);
-        transform-origin: 0 50%;
+    body{height:120vh}
+    .home-header {
+        position: fixed;
+        height:60px;
+        left: 0;
+        width: 100%;
+        top: 0;
+        font-size:15px;
+        font-weight: bold;
+        color: #8590a6;
+        background: #fff;
+        border-bottom: 1px solid rgba(30,35,42,.06);
+        box-shadow: 0 1px 3px 0 rgba(0,34,77,.05);
+        transition: all .8s;
     }
->>>>>>> 6380bbb7781f40cdb2d6f477f990bbf2f3fd8a90
+    .home-header .self-name {
+        width:200px;
+        position: absolute;
+        left:0;
+        top: 0;
+        padding: 10px  0 0 30px;
+        background: #fff;
+    }
+    .home-header .self-name img {
+        display: inline-block;
+        height:40px;
+        width:40px;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+    .home-header .self-name .name-text {
+        display: inline-block;
+        padding-left:20px;
+        line-height:40px;
+    }
+    .home-header .other-modules {
+        text-align: right;
+        padding:10px 30px 10px 0;
+        opacity: 1;
+        white-space: nowrap;
+    }
+    .home-header .other-modules .module-item {
+        display: inline-block;
+        padding:0 10px;
+        line-height:40px;
+        cursor: pointer;
+    }
+/*关闭态*/
+    .home-header.close{
+        width:80px;
+
+    }
+    .home-header.close .self-name{
+        width:80px;
+
+    }
+    .home-header.close .other-modules{
+        opacity: 0;
+    }
+    .home-header.close .name-text{
+        display: none;
+    }
 }
