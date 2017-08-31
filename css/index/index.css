@@ -1,7 +1,7 @@
 @import "./../style.css";
 
 @media screen and (min-width: 768px) {
-    body{height:120vh}
+    body { position: relative;}
     .home-header {
         position: fixed;
         height:60px;
@@ -15,6 +15,7 @@
         border-bottom: 1px solid rgba(30,35,42,.06);
         box-shadow: 0 1px 3px 0 rgba(0,34,77,.05);
         transition: all .8s;
+        z-index:100;
     }
     .home-header .self-name {
         width:200px;
@@ -62,5 +63,87 @@
     }
     .home-header.close .name-text{
         display: none;
+    }
+
+    /*主题部分=============================*/
+    /*个人简介------------------------------*/
+    .simple-intro {
+        position: absolute;
+        top:0;
+        left:20%;
+        width:600px;
+        margin: 100px auto;
+        background: #fff;
+        padding:30px 15px;
+        border:1px solid #eee;
+        border-radius: 4px;
+        transform: rotateZ(-5deg);
+        transform-origin: 100% 0;
+        opacity: 1;
+        transition: all 2s;
+    }
+    .simple-intro p {
+        font-size:14px;
+        color: #8590a6;
+        line-height:2.4;
+    }
+    .simple-intro button {
+        display: block;
+        position: absolute;
+        width:80px;
+        height:40px;
+        line-height:38px;
+        text-align: center;
+        font-weight: bold;
+        right:30px;
+        bottom:30px;
+        background: #eee;
+        border-radius: 2px;
+        border:1px solid #ddd;
+        transform: rotateZ(0deg);
+        transform-origin: 0 0;
+        animation: shake .5s ease 0s infinite alternate;
+    }
+    .simple-intro button:hover {
+        animation: none;
+        transform: rotateZ(10deg);
+    }
+    /*button 动画*/
+    @keyframes shake
+    {
+        0%   {transform: rotate(5deg)}
+        100%  {transform: rotate(10deg)}
+    }
+
+    /*技能面板------------------------------*/
+    .profession-skills {
+        position: absolute;
+        left:20%;
+        top:0;
+        width:600px;
+        margin: 100px auto;
+        background: #fff;
+        padding:30px 15px;
+        border:1px solid #eee;
+        border-radius: 4px;
+
+        opacity: 1;
+        transition: all 2s;
+    }
+    .profession-skills .skill-item {
+        font-size:14px;
+        color: #8590a6;
+        line-height:2.4;
+    }
+
+    /*向左飘走的状态*/
+    .flow-left {
+        left: -100%;
+        opacity: 0;
+    }
+    /*向右飘走的状态*/
+    .flow-right {
+        left: 100%;
+        opacity: 0;
     }
 }

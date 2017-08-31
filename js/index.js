@@ -19,7 +19,7 @@ window.addEventListener('scroll',function (e) {
 
 // 判断滚动手势 加入防抖
 function scroll( event ) {
-    if(document.body.scrollTop == scroll_top || event.timeStamp - timeStamp < 50 || Math.abs(document.body.scrollTop - scroll_top) > 10){
+    if(document.body.scrollTop == scroll_top || event.timeStamp - timeStamp < 50){
         return 0;
     }else { // 下滑
         if(document.body.scrollTop > scroll_top){
@@ -28,4 +28,19 @@ function scroll( event ) {
             return -1
         }
     }
+}
+
+//动画测试快
+setTimeout(function () {
+    var doms = document.getElementsByClassName('skill-mastery');
+    for(var index = 0; index < doms.length; index ++ ){
+        console.log(doms[index])
+        doms[index].classList.add('active');
+    }
+},2000)
+
+function flowLeft(e) {
+    document.getElementsByClassName('simple-intro')[0].classList.add('flow-left');
+    document.getElementsByClassName('profession-skills')[0].classList.remove('flow-right');
+
 }
