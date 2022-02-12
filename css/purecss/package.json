@@ -18,7 +18,7 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "http://registry.npm.taobao.org/purecss/download/purecss-0.6.2.tgz",
+  "_resolved": "https://registry.npmmirror.com/purecss/download/purecss-0.6.2.tgz",
   "_shasum": "f0827d227e909543c5138f36d56c8c613f476b8c",
   "_spec": "purecss@^0.6.0",
   "_where": "/private/var/www/kaer-god.github.io",
